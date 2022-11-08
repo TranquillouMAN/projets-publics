@@ -101,4 +101,27 @@
 # integerValue = 10
 # stringIntegerValue = str(10)
 
+#exo 1 
+# concatene 2 chaine de charactère, les séparant par une virgule
+
+# fonction affichant l'identité d'une personne
+def identite(id):
+    # assignation du prénom
+    prénom = "Dydy"
+    # assignation du nom
+    nom = "ben"
+    # calcule de l'id
+    id = nom + ', ' + prénom
+    # affiche l'id
+    print(id)
+identite(id)
+
+#exo2
+# Faire une fonction qui itere sur tous les index d'un tableau renvoyant une chaine de caractère
+#avec l'ensemble des occurence d'un chiffre
+#pour tableau [0.1.1.1.0.1.1.0.1]
+#la fonction(tableau, 0) doit renvoyer "0, 4, 7" n'hesitez pas a implementer la première donction ;)
+
+
+
 #FIN   
