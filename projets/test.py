@@ -154,4 +154,7 @@ print(chaineResultat(strA="j'aime la moula" , strB="la grosse moula sa mère"))
 
 #definir une fonction suiteDeFibonacci avec comme paramètre x et lenmax
 
+# conway (x)
+# L = [] x len
+#
 #FIN   
