@@ -105,23 +105,53 @@
 # concatene 2 chaine de charactère, les séparant par une virgule
 
 # fonction affichant l'identité d'une personne
-def identite(id):
-    # assignation du prénom
-    prénom = "Dydy"
-    # assignation du nom
-    nom = "ben"
-    # calcule de l'id
-    id = nom + ', ' + prénom
-    # affiche l'id
-    print(id)
-identite(id)
+def chaineResultat(strA, strB):
+     # assigner a stringfiedStrA le retour de l'execution de la fonction str with comme paramètre strA
+     stringifiedStrA= str(strA)
+     # assigner a stringfiedStrA le retour de l'execution de la fonction str with comme paramètre strB
+     stringifiedStrB= str(strB)
+     # calcule de l'id concatenat les 2 chaine de carctère et en les séparant par une virgule
+     chaineResultat = stringifiedStrA + ', ' + stringifiedStrB
+     # retourner chaineResultat
+     return chaineResultat
+print(chaineResultat(strA="j'aime la moula" , strB="la grosse moula sa mère"))
 
 #exo2
 # Faire une fonction qui itere sur tous les index d'un tableau renvoyant une chaine de caractère
 #avec l'ensemble des occurence d'un chiffre
-#pour tableau [0.1.1.1.0.1.1.0.1]
-#la fonction(tableau, 0) doit renvoyer "0, 4, 7" n'hesitez pas a implementer la première donction ;)
+#pour tableau [0,1,1,1,0,1,1,0,1]
+#la fonction(tableau, 0) doit renvoyer "0, 4, 7" n'hesitez pas a implementer la première fonction ;)
 
+# définir la fonction findIndexes avec comme paramètres une liste tableau et x quelconque
+# def findIndexes(tableau , x):
+#     # initialisation de la variable i a 0
+#     i = 0
+#     # initialisation de la variable chaineRetour a chaine de charactère vide
+#     chaineRetour = ""
+#     # tant que i est plus petit que le nombre d'élément dans le tableau 
+#     while i < len(tableau):
+#         # alors on assigne a selected la valeur présente a la position i du tableau
+#         selected = tableau[i]
+#         # on initialise isFirst a vrai
+#         isFirst = True
+#         # si selected est égal a x
+#         if selected == x:
+#             # alors 
+#             #Si isfirst est vrai
+#             if isFirst:
+#                 # Alors on assigne a chaineRetour la waleur de i
+#                 chaineRetour = i
+#                 # changer is first en faux
+#                 isFirst = False
+#         # sinon     
+#         else:       
+#             # assigner le retour de l'execution de la fonction chaineResultat avec comme paramètre chaineRetour et i
+#             chaineRetour = chaineResultat(chaineRetour, i)
+#         # assigner a i, i auquel on ajoute 1
+#         i = i + 1
+#     # retourner chaineRetour
+#     return chaineRetour
 
+#definir une fonction suiteDeFibonacci avec comme paramètre x et lenmax
 
 #FIN   
