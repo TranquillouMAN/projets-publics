@@ -1,5 +1,3 @@
-nes (193 sloc)  6.64 KB
-
 #importe input qui prend les entrés des joueur
 
 #deffinir la fonction StartGame
@@ -9,6 +7,7 @@ ligneUn =["1","","",""]
 ligneDeux =["2","","",""]
 ligneTrois =["3","","",""]
 compteTour = 0
+encore = 0
 
 colonneUn = [ligneUn[1],ligneDeux[1],ligneTrois[1]]
 colonneDeux = [ligneUn[2],ligneDeux[2],ligneTrois[2]]
@@ -27,6 +26,32 @@ bbb = Tableau[2]
 cccc = Tableau[3]
 
 print(u);print(aa);print(bbb);print(cccc)
+
+def Restart():
+    coordonne = ['',"A","B","C"]
+    ligneUn =["1","","",""]
+    ligneDeux =["2","","",""]
+    ligneTrois =["3","","",""]
+    compteTour = 0
+    encore = 0
+
+    colonneUn = [ligneUn[1],ligneDeux[1],ligneTrois[1]]
+    colonneDeux = [ligneUn[2],ligneDeux[2],ligneTrois[2]]
+    colonneTrois = [ligneUn[3],ligneDeux[3],ligneTrois[3]]
+    diagoUn = [ligneUn[1],ligneDeux[2],ligneTrois[3]]
+    diagoDeux = [ligneUn[3],ligneDeux[2],ligneTrois[1]]
+
+    Jun = 0
+    Jdeux = 0
+    gagnant = 10
+
+    Tableau = [coordonne,ligneUn,ligneDeux,ligneTrois]
+    u = Tableau[0]
+    aa = Tableau[1]
+    bbb = Tableau[2]
+    cccc = Tableau[3]
+
+    print(u);print(aa);print(bbb);print(cccc)
 
 def winner():
     global ligneDeux
@@ -50,9 +75,9 @@ def winner():
         gagnant = 1
     elif colonneTrois[0] == "x" and colonneTrois[1] == "x" and colonneTrois[2] == "x":
         gagnant = 1
-    elif diagoUn[0] == "x" and diagoUn[1] == "x" and diagoUn[2] == "x":
-        gagnant = 1
-    elif diagoDeux[0] == "x" and diagoDeux[1] == "x" and diagoDeux[2] == "x":
+    elif ligneUn[1] == "x" and ligneDeux[2] == "x" and ligneTrois[3] == "x":
+        gagnant = 2
+    elif ligneUn[3] == "x" and ligneDeux[2] == "x" and ligneTrois[1] == "x":
         gagnant = 1
     elif ligneUn[1] == "o" and ligneUn[2] == "o" and ligneUn[3] == "o":
         gagnant = 2
@@ -66,15 +91,12 @@ def winner():
         gagnant = 2
     elif colonneTrois[0] == "o" and colonneTrois[1] == "o" and colonneTrois[2] == "o":
         gagnant = 2
-    elif diagoUn[0] == "o" and diagoUn[1] == "o" and diagoUn[2] == "o":
+    elif ligneUn[1] == "o" and ligneDeux[2] == "o" and ligneTrois[3] == "o":
         gagnant = 2
-    elif diagoDeux[0] == "o" and diagoDeux[1] == "o" and diagoDeux[2] == "o":
+    elif ligneUn[3] == "o" and ligneDeux[2] == "o" and ligneTrois[1] == "o":
         gagnant = 2
     elif compteTour == 9:
         gagnant = 0
-
-
-
 
 def coupJoueur():
     Reponse = input("mettre les coordonné : ")
@@ -188,26 +210,46 @@ def StarterGame():
     global Jdeux
     global gagnant
     global compteTour
+    global encore
     while not gagnant in [0,1,2]:
-        Jun = Jdeux + 1
-        coupJoueur()
-        compteTour = compteTour + 1
-        Jdeux = Jun + 1
-        print(u);print(aa);print(bbb);print(cccc)
-        winner()
-        print(compteTour)
-        print(gagnant)
-        coupJoueur()
-        compteTour = compteTour + 1
-        print(u);print(aa);print(bbb);print(cccc)
-        winner()
-        print(compteTour)
-        if gagnant == 1:
-            print("le joueur 1 gagne")
-        elif gagnant == 2:
-            print("le joueur 2 gagne")
-        elif gagnant == 0:
-            print("égalité")
+        if not gagnant in [0,1,2]:
+            Jun = Jdeux + 1
+            coupJoueur()
+            compteTour = compteTour + 1
+            print(u);print(aa);print(bbb);print(cccc)
+            winner()
+            print(compteTour)
+            print(gagnant)
+        if not gagnant in [0,1,2]:   
+            Jdeux = Jun + 1
+            coupJoueur()
+            compteTour = compteTour + 1
+            print(u);print(aa);print(bbb);print(cccc)
+            winner()
+            print(compteTour)
+            print(gagnant)
+    if gagnant == 0:
+        print("matche nul, vous êtes nul !")
+    elif gagnant == 1:
+        print("joueur 1 (ps celui qui a les x ) est gagnant, ps le joueur 2 tes nul")
+    elif gagnant == 2:
+        print("le joueur 2 (ps celui qui a les o ) est gagnant, ps le joueur 1 tes nul")
+    print("yo bande de débile tu veux retenter ?")
+    encore = input("-1 = retenter || -2 = j'abandone car jsui nul")
+    while 1:
+        if not encore in [1,2]:
+            print("te fous pas dma geu ptit batard mes 1 ou 2 et pas : ",encore)
+            print("yo bande de débile tu veux retenter ?")
+            encore = input("-1 = retenter || -2 = j'abandone car jsui nul")
+        elif encore in [1,2]:
+            if encore == 1:
+                print("oki Dinosaure ON RESTARTTTTTTTRE")
+                Restart()
+                StarterGame()
+            elif encore == 2:
+                print("NNNNNNNNNNNNNNOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOBBBBBBBBBBBBBB")
+                return
+
 
 
             
