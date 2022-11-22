@@ -254,35 +254,65 @@ def coupJoueur():
     global diagoUn
     # globaliser la variable gagnant
     global gagnant
+    # assigner a la variable reponse, le retour de l'éxecution de la fonction input avec comme paramètre "mettre les coordonné : "
     Reponse = input("mettre les coordonné : ")
+    # si la variable Reponse n'est pas dans la liste "a1","a2","a3","A1","A2","A3","b1","b2","b3","B1","B2","B3","c1","c2","c3","C1","C2","C3"
     if not Reponse in ["a1","a2","a3","A1","A2","A3","b1","b2","b3","B1","B2","B3","c1","c2","c3","C1","C2","C3"]:
+        # alors afficher "réponse incorectte"
         print("réponse inconrectte")
+        # éxecuter la fonction coupJoueur
         coupJoueur()
+    # sinon
     else:
+        # afficher "bonne réponse"
         print("bonne réponse")
+        # si la variable Reponse est égal a "a1" ou "A1"
         if Reponse == "a1" or Reponse == "A1":
+            # alors si ligneUn[1] n'est pas égal a ""
             if ligneUn[1] != "":
+                # alors afficher "yolo"
                 print("yolo")
+                # éxecuter coupJoueur
                 coupJoueur()
+            # si ligneUn[1] est égal a ""
             elif ligneUn[1] == "":
+                # alors si la variable Jun est supérieur a la variable Jdeux
                 if Jun > Jdeux :
+                    # alors assigne a la variable ligneUn[1] est égal a "x"
                     ligneUn[1] ="x"
+                # si la variable Jdeux est supérieur a la variable Jun
                 elif Jdeux > Jun :
+                    # alors assigne a la variable ligneUn[1] est égal a "o"
                     ligneUn[1] ="o"
+            # sinon
             else:
+                # afficher "erreur"
                 print("erreur")
+        # si la variable Reponse est égal a "b1" ou "B1"
         elif Reponse == "b1" or Reponse == "B1":
+            # alors si ligneUn[2] n'est pas égal a ""
             if ligneUn[2] != "":
+                # alors afficher "yolo"
                 print("yolo")
+                # éxecuter coupJoueur
                 coupJoueur()
+            # si ligneUn[2] est égal a ""
             elif ligneUn[2] == "":
+                # alors si la variable Jun est supérieur a la variable Jdeux
                 if Jun > Jdeux :
+                    # alors assigne a la variable ligneUn[2] est égal a "x"
                     ligneUn[2] ="x"
+                # si la variable Jdeux est supérieur a la variable Jun
                 elif Jdeux > Jun :
+                    # alors assigne a la variable ligneUn[2] est égal a "o"
                     ligneUn[2] ="o"
+            # sinon
             else:
+                # afficher "erreur"
                 print("erreur")
+        # si la variable Reponse est égal a "c1" ou "C1"
         elif Reponse == "c1" or Reponse == "C3":
+            # alors si ligneUn[3] n'est pas égal a ""
             if ligneUn[3] != "":
                 print("yolo")
                 coupJoueur()
@@ -293,6 +323,7 @@ def coupJoueur():
                     ligneUn[3] ="o"
             else:
                 print("erreur")
+        # si la variable Reponse est égal a "a2" ou "A2"
         elif Reponse == "a2" or Reponse == "A2":
             if ligneDeux[1] != "":
                 print("yolo")
@@ -304,6 +335,7 @@ def coupJoueur():
                     ligneDeux[1] ="o"
             else:
                 print("erreur")
+        # si la variable Reponse est égal a "b2" ou "B2"
         elif Reponse == "b2" or Reponse == "B2":
             if ligneDeux[2] != "":
                 print("yolo")
