@@ -531,7 +531,9 @@ def Bot():
                     for i in range(1, len(ligneUn)):
                         # si la variable ligneUn[i] est égal a rien
                         if ligneUn[i] == '':
+                            # alors assigne a la variable ligneUn[i] 'o'
                             ligneUn[i] = 'o'
+                            # retourner la fonction
                             return
                 # si la variable ligneDeux.count('o') est égal a 2
                 if ligneDeux.count('o') == 2:
@@ -539,7 +541,9 @@ def Bot():
                     for i in range(1, len(ligneDeux)):
                         # si la variable ligneDeux[i] est égal a rien
                         if ligneDeux[i] == '':
+                            # alors assigne a la variable ligneDeux[i] 'o'
                             ligneDeux[i] = 'o'
+                            # retourner la fonction
                             return
                 # si la variable ligneTrois.count('o') est égal a 2
                 if ligneTrois.count('o') == 2:
@@ -547,7 +551,9 @@ def Bot():
                     for i in range(1, len(ligneTrois)):
                         # si la variable ligneTrois[i] est égal a rien
                         if ligneTrois[i] == '':
+                            # alors assigne a la variable ligneTrois[i] 'o'
                             ligneTrois[i] = 'o'
+                            # retourner la fonction
                             return
                 # si la variable colonneUn.count('o') est égal a 2
                 if colonneUn.count('o') == 2:
@@ -555,8 +561,11 @@ def Bot():
                     for i in range(len(colonneUn)):
                         # si la variable colonneUn[i] est égal a rien
                         if colonneUn[i] == '':
+                            # alors assigne a la variable colonneUn[i] 'o'
                             colonneUn[i] = 'o'
+                            # assigne a la variable ligneUn[1] colonneUn[0]; a la variable ligneDeux[1] colonneUn[1]; a la variable ligneTrois[1] colonneUn[2]
                             ligneUn[1] = colonneUn[0];ligneDeux[1] = colonneUn[1];ligneTrois[1] = colonneUn[2]
+                            # retourner la fonction
                             return
                 # si la variable colonneDeux.count('o') est égal a 2
                 if colonneDeux.count('o') == 2:
@@ -564,8 +573,11 @@ def Bot():
                     for i in range(len(colonneDeux)):
                         # si la variable colonneDeux[i] est égal a rien
                         if colonneDeux[i] == '':
+                            # alors assigne a la variable colonneDeux[i] 'o'
                             colonneDeux[i] = 'o'
+                            # assigne a la variable ligneUn[2] colonneDeux[0]; a la variable ligneDeux[2] colonneDeux[1]; a la variable ligneTrois[2] colonneUn[2]
                             ligneUn[2] = colonneDeux[0];ligneDeux[2] = colonneDeux[1];ligneTrois[2] = colonneDeux[2]
+                            # retourner la fonction
                             return
                 # si la variable colonneTrois.count('o') est égal a 2
                 if colonneTrois.count('o') == 2:
@@ -573,8 +585,11 @@ def Bot():
                     for i in range(len(colonneTrois)):
                         # si la variable colonneTrois[i] est égal a rien
                         if colonneTrois[i] == '':
+                            # alors assigne a la variable colonneTrois[i] 'o'
                             colonneTrois[i] = 'o'
+                            # assigne a la variable ligneUn[3] colonneTrois[0]; a la variable ligneDeux[3] colonneTrois[1]; a la variable ligneTrois[3] colonneTrois[2]
                             ligneUn[3] = colonneTrois[0];ligneDeux[3] = colonneTrois[1];ligneTrois[3] = colonneTrois[2]
+                            # retourner la fonction
                             return
                 # si la variable diagoUn.count('o') est égal a 2
                 if diagoUn.count('o') == 2:
@@ -582,8 +597,11 @@ def Bot():
                     for i in range(len(diagoUn)):
                         # si la variable diagoUn[i] est égal a rien
                         if diagoUn[i] == '':
+                            # alors assigne a la variable diagoUn[i] 'o'
                             diagoUn[i] = 'o'
+                            # assigne a la variable ligneUn[1] diagoUn[0]; a la variable ligneDeux[2] diagoUn[1]; a la variable ligneTrois[3] diagoUn[2]
                             ligneUn[1] = diagoUn[0];ligneDeux[2] = diagoUn[1];ligneTrois[3] = diagoUn[2]
+                            # retourner la fonction
                             return
                 # si la variable diagoDeux.count('o') est égal a 2
                 if diagoDeux.count('o') == 2:
@@ -591,8 +609,11 @@ def Bot():
                     for i in range(len(diagoDeux)):
                         # si la variable diagoDeux[i] est égal a rien
                         if diagoDeux[i] == '':
+                            # alors assigne a la variable diagoDeux[i] 'o'
                             diagoDeux[i] = 'o'
+                            # assigne a la variable ligneUn[3] diagoDeux[0]; a la variable ligneDeux[2] diagoDeux[1]; a la variable ligneTrois[1] diagoDeux[0]
                             ligneUn[3] = diagoDeux[2];ligneDeux[2] = diagoDeux[1];ligneTrois[1] = diagoDeux[0]
+                            # retourner la fonction
                             return 
                 # si la variable ligneUn.count('') est supérieur ou égal a 1
                 if ligneUn.count('')>= 1:
@@ -602,7 +623,9 @@ def Bot():
                         for i in range(1, len(ligneUn)):
                             # si la variable ligneUn[i] est égal a rien
                             if ligneUn[i] == '':
+                                # alors assigne a la variable ligneUn[i] 'o'
                                 ligneUn[i] = 'o'
+                                # retourner la fonction
                                 return
                 # si la variable ligneDeux.count('') est supérieur ou égal a 1
                 if ligneDeux.count('')>= 1:   
@@ -612,7 +635,9 @@ def Bot():
                         for i in range(1, len(ligneDeux)):
                             # si la variable ligneDeux[i] est égal a rien
                             if ligneDeux[i] == '':
+                                # alors assigne a la variable ligneDeux[i] 'o'
                                 ligneDeux[i] = 'o'
+                                # retourner la fonction
                                 return
                 # si la variable ligneTrois.count('') est supérieur ou égal a 1
                 if ligneTrois.count('')>= 1:
@@ -622,7 +647,9 @@ def Bot():
                         for i in range(1, len(ligneTrois)):
                             # si la variable ligneTrois[i] est égal a rien
                             if ligneTrois[i] == '':
+                                # alors assigne a la variable ligneTrois[i] 'o'
                                 ligneTrois[i] = 'o'
+                                # retourner la fonction
                                 return
                 # si la variable colonneUn.count('') est supérieur ou égal a 1
                 if colonneUn.count('')>= 1:
@@ -632,8 +659,11 @@ def Bot():
                         for i in range(len(colonneUn)):
                             # si la variable colonneUn[i] est égal a rien
                             if colonneUn[i] == '':
+                                # alors assigne a la variable colonneUn[i] 'o'
                                 colonneUn[i] = 'o'
+                                # assigne a la variable ligneUn[1] colonneUn[0]; a la variable ligneDeux[1] colonneUn[1]; a la variable ligneTrois[1] colonneUn[2]
                                 ligneUn[1] = colonneUn[0];ligneDeux[1] = colonneUn[1];ligneTrois[1] = colonneUn[2]
+                                # retourner la fonction
                                 return
                 # si la variable colonneDeux.count('') est supérieur ou égal a 1
                 if colonneDeux.count('')>= 1:
@@ -643,8 +673,11 @@ def Bot():
                         for i in range(len(colonneDeux)):
                             # si la variable colonneDeux[i] est égal a rien
                             if colonneDeux[i] == '':
+                                # alors assigne a la variable colonneDeux[i] 'o'
                                 colonneDeux[i] = 'o'
+                                # assigne a la variable ligneUn[2] colonneDeux[0]; a la variable ligneDeux[2] colonneDeux[1]; a la variable ligneTrois[2] colonneDeux[2]
                                 ligneUn[2] = colonneDeux[0];ligneDeux[2] = colonneDeux[1];ligneTrois[2] = colonneDeux[2]
+                                # retourner la fonction
                                 return
                 # si la variable colonneTrois.count('') est supérieur ou égal a 1
                 if colonneTrois.count('')>= 1:
@@ -652,10 +685,13 @@ def Bot():
                     if colonneTrois.count('x') == 2:
                         # alors pour i dans l'ensemble (len(colonneTrois))
                         for i in range(len(colonneTrois)):
-                            # si la variable colonne[i] est égal a rien
+                            # si la variable colonneTrois[i] est égal a rien
                             if colonneTrois[i] == '':
+                                # alors assigne a la variable colonneTrois[i] 'o'
                                 colonneTrois[i] = 'o'
+                                # assigne a la variable ligneUn[3] colonneTrois[0]; a la variable ligneDeux[3] colonneTrois[1]; a la variable ligneTrois[3] colonneTrois[2]
                                 ligneUn[3] = colonneTrois[0];ligneDeux[3] = colonneTrois[1];ligneTrois[3] = colonneTrois[2]
+                                # retourner la fonction
                                 return
                 # si la variable diagoUn.count('') est supérieur ou égal a 1
                 if diagoUn.count('')>= 1:
@@ -663,9 +699,13 @@ def Bot():
                     if diagoUn.count('x') == 2:
                         # alors pour i dans l'ensemble (len(diagoUn))
                         for i in range(len(diagoUn)):
+                            # si la variable diagoUn[i] est égal a rien
                             if diagoUn[i] == '':
+                                # alors assigne a la variable diagoUn[i] 'o'
                                 diagoUn[i] = 'o'
+                                # assigne a la variable ligneUn[1] diagoUn[0]; a la variable ligneDeux[2] diagoUn[1]; a la variable ligneTrois[3] diagoUn[2]
                                 ligneUn[1] = diagoUn[0];ligneDeux[2] = diagoUn[1];ligneTrois[3] = diagoUn[2]
+                                # retourner la fonction
                                 return
                 # si la variable diagoDeux.count('') est supérieur ou égal a 1
                 if diagoDeux.count('')>= 1:
@@ -673,88 +713,171 @@ def Bot():
                     if diagoDeux.count('x') == 2:
                         # alors pour i dans l'ensemble (len(diagoDeux))
                         for i in range(len(diagoDeux)):
+                            # si la variable diagoDeux[i] est égal a rien
                             if diagoDeux[i] == '':
+                                # alors assigne a la variable diagoDeux[i] 'o'
                                 diagoDeux[i] = 'o'
+                                # assigne a la variable ligneUn[3] diagoDeux[2]; a la variable ligneDeux[2] diagoDeux[1]; a la variable ligneTrois[1] diagoDeux[0]
                                 ligneUn[3] = diagoDeux[2];ligneDeux[2] = diagoDeux[1];ligneTrois[1] = diagoDeux[0]
+                                # retourner la fonction
                                 return
+                # si la variable ligneUn[1] et ligneTrois[3] est égal a 'x'
                 if ligneUn[1] == 'x' and ligneTrois[3] == 'x':
+                    # alors si la variable ligneUn[2] est égal a rien
                     if ligneUn[2] == '':
+                        # alors assigne a la variable ligneUn[2] 'o'
                         ligneUn[2] = 'o'
+                        # retourner la fonction
                         return
+                # si la variable ligneUn[3] et ligneTrois[1] est égal a 'x'
                 if ligneUn[3] == 'x' and ligneTrois[1] == 'x':
+                    # alors si la variable ligneUn[2] est égal a rien
                     if ligneUn[2] == '':
+                        # alors assigne a la variable ligneUn[2] 'o'
                         ligneUn[2] = 'o'
+                        # retourner la fonction
                         return
+                # si la variable ligneDeux[2] et ligneTrois[3] est égal a 'x'
                 if ligneDeux[2] == 'x' and ligneTrois[3] == 'x':
+                    # alors si la variable ligneTrois[1] est égal a rien
                     if ligneTrois[1] == '':
+                        # alors assigne a la variable ligneTrois[1] 'o'
                         ligneTrois[1] = 'o'
+                        # retourner la fonction
                         return
+                # si la variable ligneDeux[2] et ligneTrois[1] est égal a 'x'
                 if ligneDeux[2] == 'x' and ligneTrois[1] == 'x':
+                    # alors si la variable ligneUn[3] est égal a rien
                     if ligneUn[3] == '':
+                        # alors assigne a la variable ligneUn[3] 'o'
                         ligneUn[3] = 'o'
+                        # retourner la fonction
                         return
+                # si la variable ligneDeux[2] et ligneUn[3] est égal a 'x'
                 if ligneDeux[2] == 'x' and ligneUn[3] == 'x':
+                    # alors si la variable ligneTrois[1] est égal a rien
                     if ligneTrois[1] == '':
+                        # alors assigne a la variable ligneTrois[1] 'o'
                         ligneTrois[1] = 'o'
+                        # retourner la fonction
                         return
+                # si la variable ligneTrois[1] et ligneDeux[2] est égal a 'x'
                 if ligneTrois[1] == 'x' and ligneDeux[2] == 'x':
+                    # alors si la variable ligneUn[3] est égal a rien
                     if ligneUn[3] == '':
+                        # alors assigne a la variable ligneTrois[3] 'o'
                         ligneDeux[3] = 'o'
+                        # retourner la fonction
                         return
+                # si la variable ligneTrois[2] est égal a 'x'
                 if ligneTrois[2] == 'x':
+                    # alors si la variable ligneUn[3] ou la variable ligneUn[1] est égal a x
                     if ligneUn[3] or ligneUn[1] == 'x':
+                        # alors si la variable ligneTrois[3] est égal a rien
                         if ligneTrois[3] == '':
+                            # alors assigne a la variable ligneTrois[3] 'o'
                             ligneTrois[3] = 'o'
+                            # retourner la fonction
                             return
+                # si la variable ligneUn[2] est égal a 'x'
                 if ligneUn[2] == 'x':
+                    # alors si la variable ligneUn[3] ou la variable ligneUn[1] est égal a x
                     if ligneUn[3] or ligneUn[1] == 'x':
+                        # alors si la variable ligneUn[3] est égal a rien
                         if ligneUn[3] == '':
+                            # alors assigne a la variable ligneDeux[3] 'o'
                             ligneDeux[3] = 'o'
+                            # retourner la fonction
                             return         
+                # si la variable diagoUn.count('o') est égal a 1
                 if diagoUn.count('o') == 1:
+                    # alors alors pour la variable i dans la range(len(diagoUn))
                     for i in range(len(diagoUn)):
+                        # si la variable diagoUn[i] est égal a rien
                         if diagoUn[i] == '':
+                            # alors assigne a la variable diagoUn[i] 'o'
                             diagoUn[i] = 'o'
+                            # assigne a la variable ligneUn[1] diagoUn[0]; a la variable ligneDeux[2] diagoUn[1]; a la variable ligneTrois[3] diagoUn[2]
                             ligneUn[1] = diagoUn[0];ligneDeux[2] = diagoUn[1];ligneTrois[3] = diagoUn[2]
+                            # retourner la fonction
                             return
+                # si la variable diagoDeux.count('o') est égal a 1
                 if diagoDeux.count('o') == 1:
+                    # alors pour la variable i dans la range(len(diagoDeux))
                     for i in range(len(diagoDeux)):
+                        # si la variable diagoDeux[i] est égal a rien
                         if diagoDeux[i] == '':
+                            # alors assigne a la variable diagoDeux[i] 'o'
                             diagoDeux[i] = 'o'
+                            # assigne a la variable ligneUn[3] diagoDeux[2]; a la variable ligneDeux[2] diagoDeux[1]; a la variable ligneTrois[1] diagoDeux[0]
                             ligneUn[3] = diagoDeux[2];ligneDeux[2] = diagoDeux[1];ligneTrois[1] = diagoDeux[0]
-                            return              
+                            # retourner la fonction
+                            return
+                # si la variable ligneUn.count('o') est égal a 1         
                 if ligneUn.count('o') == 1:
+                    # alors pour la variable i dans la range(len(ligneUn))
                     for i in range(1, len(ligneUn)):
+                        # si la variable ligneUn[i] est égal a rien
                         if ligneUn[i] == '':
+                            # alors assigne a la variable ligneUn[i] 'o'
                             ligneUn[i] = 'o'
+                            # retourner la fonction
                             return
+                # si la variable ligneDeux.count('o') est égal a 1
                 if ligneDeux.count('o') == 1:
+                    # alors pour la variable i dans la range(len(ligneDeux))
                     for i in range(1, len(ligneDeux)):
+                        # si la variable ligneDeux[i] est égal a rien
                         if ligneDeux[i] == '':
+                            # alors assigne a la variable ligneDeux[i] 'o'
                             ligneDeux[i] = 'o'
+                            # retourner la fonction
                             return
+                # si la variable ligneTrois.count('o') est égal a 1
                 if ligneTrois.count('o') == 1:
+                    # alors pour la variable i dans la range(len(ligneTrois))
                     for i in range(1, len(ligneTrois)):
+                        # si la variable ligneTrois[i] est égal a rien
                         if ligneTrois[i] == '':
+                            # alors assigne a la variable ligneTrois[i] 'o'
                             ligneTrois[i] = 'o'
+                            # retourner la fonction
                             return
+                # si la variable colonneUn.count('o') est égal a 1
                 if colonneUn.count('o') == 1:
+                    # alors pour la variable i dans la range(len(colonneUn))
                     for i in range(len(colonneUn)):
+                        # si la variable colonneUn[i] est égal a rien
                         if colonneUn[i] == '':
+                            # alors assigne a la variable colonneUn[i] 'o'
                             colonneUn[i] = 'o'
+                            # assigne a la variable ligneUn[1] colonneUn[0]; a la variable ligneDeux[1] colonneUn[1]; a la variable ligneTrois[1] colonneUn[2]
                             ligneUn[1] = colonneUn[0];ligneDeux[1] = colonneUn[1];ligneTrois[1] = colonneUn[2]
+                            # retourner la fonction
                             return
+                # si la variable colonneDeux.count('o') est égal a 1
                 if colonneDeux.count('o') == 1:
+                    # alors pour la variable i dans la range(len(colonneDeux))
                     for i in range(len(colonneDeux)):
+                        # si la variable colonneDeux[i] est égal a rien
                         if colonneDeux[i] == '':
+                            # alors assigne a la variable colonneDeux[i] 'o'
                             colonneDeux[i] = 'o'
+                            # assigne a la variable ligneUn[2] colonneDeux[0]; a la variable ligneDeux[2] colonneDeux[1]; a la variable ligneTrois[2] colonneDeux[2]
                             ligneUn[2] = colonneDeux[0];ligneDeux[2] = colonneDeux[1];ligneTrois[2] = colonneDeux[2]
+                            # retourner la fonction
                             return
+                # si la variable colonneTrois.count('o') est égal a 1
                 if colonneTrois.count('o') == 1:
+                    # alors pour la variable i dans la range(len(colonneTrois))
                     for i in range(len(colonneTrois)):
+                        # si la variable colonneTrois[i] est égal a rien
                         if colonneTrois[i] == '':
+                            # alors assigne a la variable colonneTrois[i] 'o'
                             colonneTrois[i] = 'o'
+                            # assigne a la variable ligneUn[3] colonneTrois[0]; a la variable ligneDeux[3] colonnetrois[1]; a la variable ligneTrois[3] colonneTrois[2]
                             ligneUn[3] = colonneTrois[0];ligneDeux[3] = colonneTrois[1];ligneTrois[3] = colonneTrois[2]
+                            # retourner la fonction
                             return
 
 # initialiser la variable explication a 0
@@ -786,68 +909,121 @@ def StarterGame():
     global encore
     # globaliser la variableT Tableau
     global Tableau
-    # initialise la cariable gagnant 10
+    # initialise la variable gagnant 3
     gagnant = 3
-    #choix contre bot ou joueur
+    # afficher "me revoila tu veux te taper contre qui ? le bot ou un pote ?"
     print("me revoila tu veux te taper contre qui ? le bot ou un pote ?")
+    # afficher "réponse possible : "
     print("réponse possible : ")
+    # afficher "-bot" et "-pote"
     print("-bot");print("-pote")
+    # assigne a la variable demande "Restart"
     demande = "Restart"
+    # assigne a la variable demande, le retour de l'execution de la fonction input de paramètre "votre choix: "
     demande = input("votre choix: ")
-    #vérifie qu'il a pas mis dla D
+    # si la variable demande n'est pas dans la liste ["bot","pote"]
     if not demande in["bot","pote"]:
+        # alors afficher "tu me mes roublise, stp mes une valeur possible pas :",demande
         print("tu me mes roublise, stp mes une valeur possible pas :",demande)
+        # éxecuter la fonction StarterGame
         StarterGame()
-    #sinon paraport a se qu'il a mis le jeux start
+    # si la variable demande est dans la liste ["bot","pote"]
     if demande in ["bot","pote"]:
+        # alors si la variable demande est égal a "pote"
         if demande == "pote":
+            # afficher Tableau
             print(Tableau[0]);print(Tableau[1]);print(Tableau[2]);print(Tableau[3])
+            # tant que la variable gagnant n'est pas dans la liste [0,1,2]
             while not gagnant in [0,1,2]:
+                # si la variable gagnant n'est pas dans la liste [0,1,2]
                 if not gagnant in [0,1,2]:
+                    # alors assigne a la variable Jun, la variable Jdeux + 1
                     Jun = Jdeux + 1
+                    # éxecute coupJoueur
                     coupJoueur()
+                    # assigne a la variable compteTour, la variable compteTour + 1
                     compteTour = compteTour + 1
+                    # affiche Tableau
                     print(Tableau[0]);print(Tableau[1]);print(Tableau[2]);print(Tableau[3])
+                    # éxecute winner
                     winner()
-                if not gagnant in [0,1,2]:   
+                # si la variable gagnant n'est pas dans la liste [0,1,2]
+                if not gagnant in [0,1,2]:  
+                    # alors assigne a la variable Jdeux, la variable Jun + 1 
                     Jdeux = Jun + 1
+                    # éxecute coupJoueur
                     coupJoueur()
+                    # assigne a la variable compteTour, la variable compteTour + 1
                     compteTour = compteTour + 1
+                    # affiche Tableau
                     print(Tableau[0]);print(Tableau[1]);print(Tableau[2]);print(Tableau[3])
+                    # éxecute winner
                     winner()
-            #check a gagne et restart le jeux
+            # Si la variable gagnant est égal a 0
             if gagnant == 0:
-                print("matche nul, vous êtes nul !")     
+                # alors affiche "matche nul, vous êtes nul !"
+                print("matche nul, vous êtes nul !")
+                # éxecute la fonction Restart    
                 Restart()
+            # si la variable gagnant est égal 1
             elif gagnant == 1:
+                # alors affiche "joueur 1 (ps celui qui a les x ) est gagnant, ps le joueur 2 tes nul"
                 print("joueur 1 (ps celui qui a les x ) est gagnant, ps le joueur 2 tes nul")
+                # éxecute la fonction Restart
                 Restart()
+            # si la variable gagnant est égal 2
             elif gagnant == 2:
+                # alors affiche "joueur 2 (ps celui qui a les o ) est gagnant, ps le joueur 1 tes nul"
                 print("le joueur 2 (ps celui qui a les o ) est gagnant, ps le joueur 1 tes nul")
+                # éxecute la fonction Restart
                 Restart()
+        # si la variable demande est égal a "bot"
         if demande == "bot":
+            # afficher Tableau
             print(Tableau[0]);print(Tableau[1]);print(Tableau[2]);print(Tableau[3])
+            # tant que la variable gagnant n'est pas dans la liste [0,1,2]
             while not gagnant in [0,1,2]:
+                # si la variable gagnant n'est pas dans la liste [0,1,2]
                 if not gagnant in [0,1,2]:
+                    # alors assigne a la variable Jun, la variable Jdeux + 1
                     Jun = Jdeux + 1
+                    # éxecute coupJoueur
                     coupJoueur()
+                    # assigne a la variable compteTour, la variable compteTour + 1
                     compteTour = compteTour + 1
-                    winner()
-                if not gagnant in [0,1,2]:   
-                    Jdeux = Jun + 1
-                    Bot()
+                    # affiche Tableau
                     print(Tableau[0]);print(Tableau[1]);print(Tableau[2]);print(Tableau[3])
-                    compteTour = compteTour + 1
+                    # éxecute winner
                     winner()
+                # si la variable gagnant n'est pas dans la liste [0,1,2]
+                if not gagnant in [0,1,2]:  
+                    # alors assigne a la variable Jdeux, la variable Jun + 1 
+                    Jdeux = Jun + 1
+                    # éxecute coupJoueur
+                    coupJoueur()
+                    # assigne a la variable compteTour, la variable compteTour + 1
+                    compteTour = compteTour + 1
+                    # affiche Tableau
+                    print(Tableau[0]);print(Tableau[1]);print(Tableau[2]);print(Tableau[3])
+                    # éxecute winner
+                    winner()
+            # Si la variable gagnant est égal a 0
             if gagnant == 0:
-                print("matche nul, vous êtes nul !")     
+                # alors affiche "matche nul, vous êtes nul !"
+                print("matche nul, vous êtes nul !")
+                # éxecute la fonction Restart    
                 Restart()
+            # si la variable gagnant est égal 1
             elif gagnant == 1:
-                print("joueur 1 (ps celui qui a les x ) est gagnant, ps je vais foutre mon bot a la casse")
+                # alors affiche "joueur 1 (ps celui qui a les x ) est gagnant, ps le joueur 2 tes nul"
+                print("joueur 1 (ps celui qui a les x ) est gagnant, ps le joueur 2 tes nul")
+                # éxecute la fonction Restart
                 Restart()
+            # si la variable gagnant est égal 2
             elif gagnant == 2:
-                print("le bot (ps celui qui a les o ) est gagnant, ps le joueur 1 tes nul")
+                # alors affiche "joueur 2 (ps celui qui a les o ) est gagnant, ps le joueur 1 tes nul"
+                print("le joueur 2 (ps celui qui a les o ) est gagnant, ps le joueur 1 tes nul")
+                # éxecute la fonction Restart
                 Restart()
-
 # éxecute la fonction StarterGame
 StarterGame()
